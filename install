@@ -1,0 +1,21 @@
+#!/usr/bin/env
+
+INSTALL_DIR=$HOME/.config/nvim
+PLUGIN_MANAGER=$HOME/.local/share/nvim/site/autoload/plug.vim
+
+
+create_and_link() {
+    local target=$1
+    local source=$2
+
+    local directory=$(dirname $target)
+    
+    if [ ! -e $directory ]; then
+        mkdir -p $directory
+    fi
+
+    ln -s $(pwd)/$source $target
+}
+
+create_and_link $INSTALL_DIR nvim
+create_and_link $PLUGIN_MANAGER plug.vim

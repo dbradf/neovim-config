@@ -2,6 +2,7 @@ let mapleader = ","
 
 call plug#begin('~/.local/shard/vim/plugged')
 
+Plug 'scrooloose/nerdTree'
 Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 
@@ -42,6 +43,7 @@ set expandtab
 
 " Keymaps
 
+nmap <Leader>n :NERDTreeToggle<cr>
 nmap <Leader>v :vsplit<cr>
 nmap <Leader>s :split<cr>
 

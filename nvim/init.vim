@@ -5,6 +5,7 @@ call plug#begin('~/.local/shard/vim/plugged')
 Plug 'scrooloose/nerdTree'
 Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 

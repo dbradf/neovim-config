@@ -6,6 +6,8 @@ Plug 'scrooloose/nerdTree'
 Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 Plug 'cespare/vim-toml'
+Plug 'sheerun/vim-polyglot'
+Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
 

@@ -8,6 +8,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'cespare/vim-toml'
 Plug 'sheerun/vim-polyglot'
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
@@ -56,6 +57,9 @@ filetype plugin on
 filetype indent on
 
 set cc=101  " Highlight the 101 column.
+
+let g:python3_host_prog = '~/.pyenv/versions/neovim-3.8.1/bin/python'
+let g:deoplete#enable_at_startup = 1
 
 
 " Status line
